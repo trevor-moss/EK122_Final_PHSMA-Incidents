@@ -1,0 +1,20 @@
+The original dataset on GitHub was a series of 635 csv files, one for each month from January 1971 to November 2023. This was done to circumvent GitHub file size limits.
+
+-----
+
+While combined.csv was not created with MATLAB, an attempt was made at combining through MATLAB. An error due to cell array datatype conflicts halted progress, and a decision was made to use an external tool.
+
+-----
+
+In order to create a single csv file, we used the xsv command line tool.
+https://github.com/BurntSushi/xsv
+
+```
+xsv cat rows /Users/trevormoss/Documents/BU/Freshman/Y1_Fall/EK122_Matlab/EK122_Project/Dataset/phmsa-hazmat-incident-reports/data/fetched/*.csv > combined.csv
+```
+
+xsv greatly sped up the process, creating the 856MB csv file in seconds, intelligently handling headers. Since this was a civ-only operation, datatype conflicts were avoided.
+
+-----
+
+All other data cleaning has been done through MATLAB, the creation of this csv was the only non MATLAB operation. No cell values or columns were modified in the process.
