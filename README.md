@@ -1,5 +1,7 @@
 # EK122_Project
 
+Alvaro Lorenzo, Ivan Marin, Trevor Moss
+
  With data from:
  https://github.com/data-liberation-project/phmsa-hazmat-incident-reports
 
